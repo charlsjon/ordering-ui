@@ -22,7 +22,7 @@ tailwind.config = {
       fontFamily: {
         roboto: ['"Roboto"', 'sans-serif'],
         robotoslab: ['"Roboto Slab"', 'serif']
-      }
+      },
     }
   }
 }
