@@ -7,7 +7,8 @@ tailwind.config = {
         tertiary: '#146758',
         searchfill: '#BAB3B3',
         searchplaceholder: '#5F6160',
-        grad: 'rgb(0 0 0 / 30%)',
+        grad: 'rgba(0,0,0,0.3)',
+        seemorebg: 'rgba(208,208,208,0.5)'
       },
       container: {
         center: true,
