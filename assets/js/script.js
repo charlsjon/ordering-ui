@@ -9,6 +9,9 @@ tailwind.config = {
         searchplaceholder: '#5F6160',
         grad: 'rgb(0 0 0 / 30%)',
       },
+      container: {
+        center: true,
+      },
       size: {
         '100': '100px',
       },
