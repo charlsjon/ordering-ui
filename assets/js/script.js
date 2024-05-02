@@ -17,6 +17,10 @@ tailwind.config = {
       },
       fontSize: {
         xxs: "10px"
+      },
+      fontFamily: {
+        roboto: ['"Roboto"', 'sans-serif'],
+        robotoslab: ['"Roboto Slab"', 'serif']
       }
     }
   }
