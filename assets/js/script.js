@@ -27,18 +27,18 @@ tailwind.config = {
   }
 }
 
-// const navbar = document.getElementById('search');
-// let lastScrollTop = 0;
-// const navbarHeight = navbar.offsetHeight;
+const navbar = document.getElementById('search');
+let lastScrollTop = 0;
+const navbarHeight = navbar.offsetHeight;
 
-// window.addEventListener('scroll', () => {
-//   const currentScroll = window.pageYOffset;
-//   if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
-//     // Scrolling down
-//     navbar.classList.add('hidden', '-translate-y-full');
-//   } else {
-//     // Scrolling up
-//     navbar.classList.remove('hidden', '-translate-y-full');
-//   }
-//   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-// });
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
+    // Scrolling down
+    navbar.classList.add('hidden');
+  } else {
+    // Scrolling up
+    navbar.classList.remove('hidden');
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
