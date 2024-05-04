@@ -10,8 +10,8 @@
 </head>
 <body>
   <main class="container w-full flex flex-col bg-primary">
-    <nav class="nav w-full flex flex-col bg-secondary sticky top-0 z-10">
-      <div class="buttons w-full justify-between flex px-4 py-4">
+    <nav class="nav w-full flex flex-col bg-secondary sticky top-0 z-10 rounded-b-lg">
+      <div class="w-full justify-between flex p-4 rounded-b-lg relative z-20" id="navbtn">
         <div class="menu-bar">
           <svg class="size-8 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
         </div>
@@ -20,20 +20,19 @@
           <svg class="size-8 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cart</title><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" /></svg>
         </div>
       </div>
-    </nav>
-    <div class=" flex w-full bg-secondary px-4 pb-7 overflow-hidden rounded-b-lg" id="search">   
-      <label for="default-search" class="mb-2 text-sm font-medium text-searchplaceholder sr-only dark:text-white">Search</label>
-      <div class="relative flex w-full">
-          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-searchplaceholder dark:text-searchplaceholder" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-          </div>
-          <input type="text" id="default-search" class="flex w-full px-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-searchfill focus:ring-secondary focus:border-secondary dark:bg-searchfill dark:border-gray-600 dark:placeholder-searchplaceholder dark:text-secondary dark:focus:ring-searchfill dark:focus:border-searchfill-400" placeholder="Search..." required />
-          <!-- <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button> -->
+      <div class="flex w-full bg-secondary px-4 pb-4 overflow-hidden rounded-b-lg fixed top-14 left-0" id="search">   
+        <label for="default-search" class="mb-2 text-sm font-medium text-searchplaceholder sr-only dark:text-white">Search</label>
+        <div class="relative flex w-full">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-searchplaceholder dark:text-searchplaceholder" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="text" id="default-search" class="flex w-full px-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-searchfill focus:ring-secondary focus:border-secondary dark:bg-searchfill dark:border-gray-600 dark:placeholder-searchplaceholder dark:text-secondary dark:focus:ring-searchfill dark:focus:border-searchfill-400" placeholder="Search..." required />
+        </div>
       </div>
-    </div>
-    <div class="w-full flex flex-col gap-7 py-2">
+    </nav>
+    <div class="w-full flex flex-col gap-7 py-2 mt-14">
       <section class="px-2">
         <div class="w-full flex px-2 py-2 gap-5 overflow-x-auto items-end no-scrollbar">
           <div class="flex flex-col items-center gap-1">
@@ -425,6 +424,6 @@
   </main>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> -->
 <script src="assets/js/script.js"></script>
 </html>
