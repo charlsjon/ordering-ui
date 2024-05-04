@@ -35,10 +35,38 @@ window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
   if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
     // Scrolling down
-    navbar.classList.add('hidden');
+    navbar.classList.remove('h-15');
+    navbar.classList.add('h-0');
+    navbar.classList.add('opacity-0');
+    navbar.classList.add('hidden', '-translate-y-full');
   } else {
     // Scrolling up
-    navbar.classList.remove('hidden');
+    navbar.classList.add('h-15');
+    navbar.classList.remove('h-0');
+    navbar.classList.remove('opacity-0');
+    navbar.classList.remove('hidden', '-translate-y-full');
   }
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+// navbar.style.transition='ease-out 1s'
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+ 
+//   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+//     navbar.classList.remove('h-15');
+//     navbar.classList.add('h-0');
+//     navbar.classList.add('opacity-0');
+//     setTimeout(() => {
+//       navbar.classList.add('hidden');
+//     }, 100);
+   
+//   } else {
+//     navbar.classList.add('h-15');
+//     navbar.classList.remove('h-0');
+//     setTimeout(() => {
+//       navbar.classList.remove('hidden');
+//       navbar.classList.remove('opacity-0');
+//     }, 100);
+//   }
+// }
