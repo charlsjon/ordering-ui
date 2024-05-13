@@ -46,18 +46,14 @@ window.addEventListener('scroll', () => {
   }
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
-// navbar.style.transition='ease-out 1s'
 
+const menuBar = document.getElementById("menu-bar");
+const sideBar = document.getElementById("side-bar");
+const companyLogo = document.getElementById("company-logo");
+menuBar.addEventListener('click', ()=> {
+  sideBar.classList.add("w-full");
+})
 
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-
-//   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-//     navbtn.classList.remove('pb-14');
-//     navbar.classList.add('hidden');
-//   } else {
-//     navbtn.classList.add('pb-14');
-//     navbar.classList.remove('hidden');
-//   }
-// }
+companyLogo.addEventListener('click', ()=> {
+  sideBar.classList.remove("w-full");
+})
