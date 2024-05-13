@@ -9,3 +9,9 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.nav-width {
+  width: 0%;
+  overflow: hidden;
+}
+
