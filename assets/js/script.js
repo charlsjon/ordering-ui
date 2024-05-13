@@ -1,4 +1,5 @@
 tailwind.config = {
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -24,9 +25,11 @@ tailwind.config = {
         roboto: ['"Roboto"', 'sans-serif'],
         robotoslab: ['"Roboto Slab"', 'serif']
       },
+    
     }
   }
 }
+
 
 const navbar = document.getElementById('search');
 const navbtn = document.getElementById('navbtn');
@@ -47,6 +50,8 @@ window.addEventListener('scroll', () => {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
+var body = document.getElementsByTagName("BODY")[0];
+const drkBtn = document.getElementById("dark-light-btn");
 const menuBar = document.getElementById("menu-bar");
 const sideBar = document.getElementById("side-bar");
 const companyLogo = document.getElementById("company-logo");
@@ -58,4 +63,21 @@ menuBar.addEventListener('click', ()=> {
 companyLogo.addEventListener('click', ()=> {
   sideBar.classList.remove("w-full");
   sideBar.classList.remove("overflow-auto");
+})
+
+
+if (localStorage.getItem('dark-mode') === 'true') {
+  body.classList.add('dark');
+} else {
+  body.classList.remove('dark');
+}
+
+drkBtn.addEventListener('click', ()=> {
+  body.classList.toggle('dark');
+  if(body.classList.contains('dark')) {
+    localStorage.setItem('dark-mode', true)
+  } else {
+    localStorage.setItem('dark-mode', false) 
+    
+  } 
 })
