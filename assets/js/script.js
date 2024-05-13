@@ -52,8 +52,10 @@ const sideBar = document.getElementById("side-bar");
 const companyLogo = document.getElementById("company-logo");
 menuBar.addEventListener('click', ()=> {
   sideBar.classList.add("w-full");
+  sideBar.classList.add("overflow-auto");
 })
 
 companyLogo.addEventListener('click', ()=> {
   sideBar.classList.remove("w-full");
+  sideBar.classList.remove("overflow-auto");
 })
