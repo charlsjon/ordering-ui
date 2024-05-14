@@ -11,6 +11,10 @@ tailwind.config = {
         grad: 'rgba(0,0,0,0.3)',
         seemorebg: 'rgba(208,208,208,0.5)',
         gray: '#E3E3E3',
+        davygray: '#555555',
+        richblack: '#0F0E0E',
+        textprimary: '#131516',
+        textsecondary: '#EDF6F9',
       },
       container: {
         center: true,
