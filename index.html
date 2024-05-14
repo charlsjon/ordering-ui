@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main class="container w-full flex flex-col bg-primary relative">
-    <nav class="nav w-full flex flex-col bg-secondary sticky top-0 z-10">
+  <main class="container w-full flex flex-col bg-primary relative dark:bg-secondary">
+    <nav class="nav w-full flex flex-col bg-secondary sticky top-0 z-10 dark:bg-richblack">
       <div class="w-full justify-between flex p-4 relative z-20" id="navbtn">
         <div id="menu-bar">
           <svg class="size-8 fill-primary active:fill-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
@@ -21,7 +21,7 @@
           <svg class="size-8 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cart</title><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" /></svg>
         </div>
       </div>
-      <div class="flex w-full bg-secondary px-4 pt-1 pb-4 overflow-hidden rounded-b-lg fixed top-16 left-0" id="search">   
+      <div class="flex w-full bg-secondary px-4 pt-1 pb-4 overflow-hidden rounded-b-lg fixed top-16 left-0 dark:bg-richblack" id="search">   
         <label for="default-search" class="mb-2 text-sm font-medium text-searchplaceholder sr-only dark:text-white">Search</label>
         <div class="relative flex w-full">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -38,34 +38,34 @@
         <div class="w-full flex px-2 py-2 gap-5 overflow-x-auto items-end no-scrollbar">
           <div class="flex flex-col items-center gap-1">
             <img class="flex h-8" src="assets/img/icons/sandwich.png">
-            <p class="text-sm font-medium font-roboto">Breakfast</p>
+            <p class="text-sm font-medium font-roboto text-textprimary dark:text-textsecondary">Breakfast</p>
           </div>
           <div class="flex flex-col items-center gap-1">
             <img class="flex h-8" src="assets/img/icons/pasta.png">
-            <p class="text-sm font-medium font-roboto">Lunch</p>
+            <p class="text-sm font-medium font-roboto text-textprimary dark:text-textsecondary">Lunch</p>
           </div>
           <div class="flex flex-col items-center gap-1">
             <img class="flex h-8" src="assets/img/icons/steak.png">
-            <p class="text-sm font-medium font-roboto">Dinner</p>
+            <p class="text-sm font-medium font-roboto text-textprimary dark:text-textsecondary">Dinner</p>
           </div>
           <div class="flex flex-col items-center gap-1">
             <img class="flex h-8" src="assets/img/icons/pizza.png">
-            <p class="text-sm font-medium font-roboto">Pizza</p>
+            <p class="text-sm font-medium font-roboto text-textprimary dark:text-textsecondary">Pizza</p>
           </div>
           <div class="flex flex-col items-center gap-1">
             <img class="flex h-8" src="assets/img/icons/burger.png">
-            <p class="text-sm font-medium font-roboto">Burger</p>
+            <p class="text-sm font-medium font-roboto text-textprimary dark:text-textsecondary">Burger</p>
           </div>
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Breakfast</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-textprimary dark:text-textsecondary">Breakfast</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/breakfast/smoothie.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Smoothie Breakfast</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Smoothie Breakfast</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs font-roboto">P499.00</p>
                 </div>
               </div>
@@ -74,8 +74,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/breakfast/full-english.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Full English</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Full English</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs font-roboto">P379.00</p>
                 </div>
               </div>
@@ -84,8 +84,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/breakfast/pbreakfast.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Plate of Breakfast</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Plate of Breakfast</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs font-roboto">P179.00</p>
                 </div>
               </div>
@@ -94,8 +94,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/breakfast/paperta.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Papeta par Eda</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Papeta par Eda</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs font-roboto">P389.00</p>
                 </div>
               </div>
@@ -104,13 +104,13 @@
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Lunch</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-secondary dark:text-primary">Lunch</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/lunch/meatball.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Meatball</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Meatball</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -119,8 +119,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/lunch/dumpling.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Dumpling Soup</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-medium text-textsecondary">Dumpling Soup</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P156.00</p>
                 </div>
               </div>
@@ -129,8 +129,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/lunch/lemon-pasta.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Lemon Pasta</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-medium text-textsecondary">Lemon Pasta</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P166.00</p>
                 </div>
               </div>
@@ -139,8 +139,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/lunch/puffy-tacos.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Puffy Tacos</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-medium text-textsecondary">Puffy Tacos</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -149,31 +149,31 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/lunch/sheet-pan.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Sheet - Pan</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-medium text-textsecondary">Sheet - Pan</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P136.00</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-seemorebg rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary">
+            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-lightshadow rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary dark:bg-darkshadow">
               <div class="add-more">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
+                <svg class="size-8 fill-secondary dark:fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
               </div>
-              <p class="text-xs whitespace-nowrap">See More...</p>
+              <p class="text-xs whitespace-nowrap text-textprimary dark:text-textsecondary">See More...</p>
             </div>
           </div>
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Dinner</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-textprimary dark:text-textsecondary">Dinner</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/dinner/cabbage-roll-skillet.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">Chicken Stir-Fry</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto text-textsecondary">Chicken Stir-Fry</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -182,8 +182,8 @@
           <div>
             <div class="size-100 flex bg-[url('assets/img/dinner/steak-potato-skillet.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
-                <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Steak & Potato Skillet</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <p class="w-10/12 flex text-xs text-primary p-1 font-medium text-textsecondary">Steak & Potato Skillet</p>
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P156.00</p>
                 </div>
               </div>
@@ -193,7 +193,7 @@
             <div class="size-100 flex bg-[url('assets/img/dinner/cabbage-roll-skillet.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Cabbage Roll Skillet</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P166.00</p>
                 </div>
               </div>
@@ -203,7 +203,7 @@
             <div class="size-100 flex bg-[url('assets/img/dinner/pepperoncini-chicken-rice.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">One-Pot Pepperoncini Chicken & Rice</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -213,30 +213,30 @@
             <div class="size-100 flex bg-[url('assets/img/dinner/sheet-pan.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Sheet - Pan</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P136.00</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-seemorebg rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary">
+            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-lightshadow rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary dark:bg-darkshadow">
               <div class="add-more">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
+                <svg class="size-8 fill-secondary dark:fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
               </div>
-              <p class="text-xs whitespace-nowrap">See More...</p>
+              <p class="text-xs whitespace-nowrap text-textprimary dark:text-textsecondary">See More...</p>
             </div>
           </div>
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Pizza</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-textprimary dark:text-textsecondary">Pizza</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/pizza/all-meat.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">All Meat Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -246,7 +246,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-special.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Special Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P156.00</p>
                 </div>
               </div>
@@ -256,7 +256,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/blt-pizza.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">BLT Pizza Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P166.00</p>
                 </div>
               </div>
@@ -266,7 +266,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/chicken-bacon.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Chicken Bacon Ranch Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -276,30 +276,30 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-hawaiian.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Hawaiian Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P136.00</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-seemorebg rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary">
+            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-lightshadow rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary dark:bg-darkshadow">
               <div class="add-more">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
+                <svg class="size-8 fill-secondary dark:fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
               </div>
-              <p class="text-xs whitespace-nowrap">See More...</p>
+              <p class="text-xs whitespace-nowrap text-textprimary dark:text-textsecondary">See More...</p>
             </div>
           </div>
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Pizza</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-textprimary dark:text-textsecondary">Pizza</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/pizza/all-meat.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">All Meat Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -309,7 +309,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-special.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Special Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P156.00</p>
                 </div>
               </div>
@@ -319,7 +319,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/blt-pizza.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">BLT Pizza Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P166.00</p>
                 </div>
               </div>
@@ -329,7 +329,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/chicken-bacon.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Chicken Bacon Ranch Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -339,30 +339,30 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-hawaiian.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Hawaiian Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P136.00</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-seemorebg rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary">
+            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-lightshadow rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary dark:bg-darkshadow">
               <div class="add-more">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
+                <svg class="size-8 fill-secondary dark:fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
               </div>
-              <p class="text-xs whitespace-nowrap">See More...</p>
+              <p class="text-xs whitespace-nowrap text-textprimary dark:text-textsecondary">See More...</p>
             </div>
           </div>
         </div>
       </section>
       <section class="w-full flex flex-col px-2">
-        <p class="text-base font-bold px-2 font-robotoslab">Pizza</p>
+        <p class="text-base font-bold px-2 font-robotoslab text-textprimary dark:text-textsecondary">Pizza</p>
         <div class="w-full flex py-2 gap-2 overflow-x-auto no-scrollbar">
           <div>
             <div class="size-100 flex bg-[url('assets/img/pizza/all-meat.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-semibold font-roboto">All Meat Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -372,7 +372,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-special.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Special Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P156.00</p>
                 </div>
               </div>
@@ -382,7 +382,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/blt-pizza.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">BLT Pizza Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P166.00</p>
                 </div>
               </div>
@@ -392,7 +392,7 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/chicken-bacon.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Chicken Bacon Ranch Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P126.00</p>
                 </div>
               </div>
@@ -402,18 +402,18 @@
             <div class="size-100 flex bg-[url('assets/img/pizza/spicy-hawaiian.png')] bg-cover rounded relative">
               <div class="size-100 flex absolute z-0 left-0 top-0 rounded bg-gradient-to-b from-grad to-transparent">
                 <p class="w-10/12 flex text-xs text-primary p-1 font-medium">Spicy Hawaiian Specialty Pizza</p>
-                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1">
+                <div class="flex bg-primary rounded-full absolute bottom-2 right-1 px-1 text-textprimary dark:text-textsecondary dark:bg-richblack">
                   <p class="text-xxs">P136.00</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-seemorebg rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary">
+            <div class="h-full flex flex-col items-center justify-center gap-3 p-2 bg-lightshadow rounded group fill-secondary hover:fill-tertiary active:fill-tertiary hover:text-tertiary active:text-tertiary dark:bg-darkshadow">
               <div class="add-more">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
+                <svg class="size-8 fill-secondary dark:fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 12,13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 12,10.5M6.5,10.5A1.5,1.5 0 0,0 5,12A1.5,1.5 0 0,0 6.5,13.5A1.5,1.5 0 0,0 8,12A1.5,1.5 0 0,0 6.5,10.5M17.5,10.5A1.5,1.5 0 0,0 16,12A1.5,1.5 0 0,0 17.5,13.5A1.5,1.5 0 0,0 19,12A1.5,1.5 0 0,0 17.5,10.5Z" /></svg>
               </div>
-              <p class="text-xs whitespace-nowrap">See More...</p>
+              <p class="text-xs whitespace-nowrap text-textprimary dark:text-textsecondary">See More...</p>
             </div>
           </div>
         </div>
