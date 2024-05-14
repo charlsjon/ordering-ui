@@ -72,16 +72,21 @@ companyLogo.addEventListener('click', ()=> {
 
 if (localStorage.getItem('dark-mode') === 'true') {
   body.classList.add('dark');
+  drkBtn.classList.add('fa-moon');
 } else {
   body.classList.remove('dark');
+  drkBtn.classList.add('fa-sun');
 }
 
 drkBtn.addEventListener('click', ()=> {
   body.classList.toggle('dark');
   if(body.classList.contains('dark')) {
-    localStorage.setItem('dark-mode', true)
+    localStorage.setItem('dark-mode', true);
+    drkBtn.classList.remove('fa-sun');
+    drkBtn.classList.add('fa-moon');
   } else {
-    localStorage.setItem('dark-mode', false) 
-    
+    localStorage.setItem('dark-mode', false); 
+    drkBtn.classList.remove('fa-moon');
+    drkBtn.classList.add('fa-sun');
   } 
 })
