@@ -96,7 +96,7 @@ drkBtn.addEventListener('click', ()=> {
 })
 
 function toLunch() {
-  location.href = '/lunch.html';;
+  location.replace('template/lunch.html');
 }
 
 function toDashboard() {
