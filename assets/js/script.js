@@ -96,9 +96,9 @@ drkBtn.addEventListener('click', ()=> {
 })
 
 function toLunch() {
-  location.replace('template/lunch.html');
+  location.replace('/zumumu-ordering-ui/template/lunch.html');
 }
 
 function toDashboard() {
-  location.href = 'index.html';
+  location.href = '/zumumu-ordering-ui/index.html';
 }
