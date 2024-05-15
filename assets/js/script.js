@@ -100,5 +100,5 @@ function toLunch() {
 }
 
 function toDashboard() {
-  location.href = '/index.html';
+  location.href = 'index.html';
 }
