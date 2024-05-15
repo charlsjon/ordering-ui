@@ -100,5 +100,5 @@ function toLunch() {
 }
 
 function toDashboard() {
-  location.replace('/zumumu-ordering-ui');
+  location.href = '/index.html';
 }
