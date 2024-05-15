@@ -13,6 +13,7 @@ tailwind.config = {
         darkshadow: 'rgba(81,81,81,0.5)',
         gray: '#E3E3E3',
         davygray: '#555555',
+        matterhorn: '#555353',
         richblack: '#0F0E0E',
         textprimary: '#131516',
         textsecondary: '#EDF6F9',
@@ -30,7 +31,9 @@ tailwind.config = {
         roboto: ['"Roboto"', 'sans-serif'],
         robotoslab: ['"Roboto Slab"', 'serif']
       },
-    
+      borderRadius: {
+        xl4: '30px',
+      },
     }
   }
 }
@@ -91,3 +94,11 @@ drkBtn.addEventListener('click', ()=> {
     drkBtn.classList.add('fa-sun');
   } 
 })
+
+function toLunch() {
+  location.replace('template/lunch.html');
+}
+
+function toDashboard() {
+  location.replace('/index.html');
+}
