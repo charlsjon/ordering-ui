@@ -10,24 +10,24 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <main class="w-full h-dvh flex flex-col justify-between pt-4">
+  <main class="w-full h-dvh bg-primary flex flex-col justify-between pt-4 dark:bg-secondary">
     <div class="w-full flex flex-col">
       <div class="w-full flex px-4">
         <div class="size-5" onclick="toDashboard()">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+          <svg class="fill-textprimary dark:fill-textsecondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </div>
       </div>
       <div class="w-full p-4 flex flex-col justify-center items-center">
         <div class="h-36 w-44 flex rounded-lg bg-[url('../assets/img/breakfast/smoothie.png')] bg-cover bg-center"></div>
       </div>
     </div>
-    <div class="w-full flex flex-col pb-4 bg-secondary rounded-t-xl4 overflow-y-auto no-scrollbar">
+    <div class="w-full flex flex-col pb-4 bg-secondary rounded-t-xl4 overflow-y-auto no-scrollbar dark:bg-richblack">
       <div class="w-full flex flex-col p-4 justify-center items-center">
         <p class="text-xl font-medium font-robotoslab text-textsecondary">Smoothie Breakfast</p>
         <p class="text-sm font-medium font-roboto text-textsecondary">Enjoy this sheeshable smoothie</p>
       </div>
       <div class="w-full py-2 flex justify-center bg-matterhorn">
-        <p class="text-xxs font-medium font-roboto text-textsecondary">Choose Size</p>
+        <p class="text-xs font-medium font-roboto text-textsecondary">Choose Size</p>
       </div>
       <div class="w-full flex py-3 gap-4 justify-center">
         <button class="py-1 px-3 rounded-full text-textsecondary focus:text-textprimary focus:bg-primary focus:outline-none focus:border-1 focus:border-matterhorn">Small</button>
@@ -35,7 +35,7 @@
         <button class="py-1 px-3 rounded-full text-textsecondary focus:text-textprimary focus:bg-primary focus:outline-none focus:border-1 focus:border-matterhorn">Large</button>
       </div>
       <div class="w-full py-2 flex justify-center bg-matterhorn">
-        <p class="text-xxs font-medium font-roboto text-textsecondary">Add Ons</p>
+        <p class="text-xs font-medium font-roboto text-textsecondary">Add Ons</p>
       </div>
       <div class="w-full flex py-3 px-2">
         <div class="w-full flex gap-4 overflow-x-auto no-scrollbar">
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="w-full py-2 flex justify-center bg-matterhorn">
-        <p class="text-xxs font-medium font-roboto text-textsecondary">Choose Amount</p>
+        <p class="text-xs font-medium font-roboto text-textsecondary">Choose Amount</p>
       </div>
       <div class="w-full flex py-3 gap-4 justify-center">
         <div class="size-5 flex">
@@ -64,7 +64,7 @@
           <p class="text-base font-medium font-roboto text-textsecondary">P499.00</p>
         </div>
         <div class="flex px-5 py-2 gap-3 justify-center items-center bg-tertiary rounded-l-full">
-          <p class="text-sm font-medium font-robotoslab text-textsecondary">Add to Cart</p>
+          <p class="text-sm font-medium font-robotoslab text-textsecondary" onclick="testDark()">Add to Cart</p>
           <div class="flex size-6">
             <svg class="fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z" /></svg>
           </div>
@@ -76,4 +76,5 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="../assets/js/script.js"></script>
+<script src="../assets/js/order.js"></script>
 </html>
