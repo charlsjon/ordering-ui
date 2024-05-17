@@ -15,6 +15,7 @@ tailwind.config = {
         davygray: '#555555',
         matterhorn: '#555353',
         richblack: '#0F0E0E',
+        redtail: '#AE4242',
         textprimary: '#131516',
         textsecondary: '#EDF6F9',
       },
