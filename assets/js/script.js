@@ -16,6 +16,8 @@ tailwind.config = {
         matterhorn: '#555353',
         richblack: '#0F0E0E',
         redtail: '#AE4242',
+        whitesmoke: '#F6F6F6',
+        suvagrey: '#868686',
         textprimary: '#131516',
         textsecondary: '#EDF6F9',
       },
@@ -45,4 +47,8 @@ function toLunch() {
 
 function toDashboard() {
   location.href = '/zumumu-ordering-ui/index.html';
+}
+
+function toCart() {
+  location.replace('/zumumu-ordering-ui/template/cart.html');
 }

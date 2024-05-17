@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="shortcut icon" href="../assets/img/favicon/logo1.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <main class="w-full h-dvh flex flex-col bg-primary">
+    <div class="flex p-4 gap-4 items-center drop-shadow-md bg-primary">
+      <div class="size-5" onclick="toDashboard()">
+        <svg class="fill-textprimary dark:fill-textsecondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </div>
+      <p class="font-robotoslab font-bold text-xl text-textprimary">Cart</p>
+    </div>
+    <div class="w-full h-full flex flex-col px-7 py-7 gap-4 items-center">
+      <div class="w-full flex relative p-2 rounded-lg bg-whitesmoke drop-shadow-md">
+        <div class="h-16 w-12 relative">
+          <div class="size-16 absolute z-10 -top-5 -left-5 bg-[url('../assets/img/breakfast/smoothie.png')] rounded-lg bg-cover bg-center"></div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-sm font-roboto text-textprimary">Smoothie Breakfast</p>
+          <p class="text-xxs font-roboto text-suvagrey">Mixed berries and fruit drink</p>
+        </div>
+        <div class="flex absolute bottom-1 p-1 right-1 z-10">
+          <p class="text-sm font-roboto text-textprimary">P 499.00</p>
+        </div>
+        <div class="w-12 flex justify-center absolute bottom-1 p-1 left-0 z-10">
+          <p class="text-sm font-bold font-roboto text-textprimary">1x</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</html>
