@@ -38,12 +38,12 @@
       <div class="w-full h-1/4 flex">
         <div class="w-full flex flex-col px-5 pb-4 pt-5 absolute bottom-0 left-0 bg-secondary rounded-t-xl4 drop-shadow-invertmd">
           <div class="w-full flex relative">
-            <div class="w-32 absolute -top-3 border border-solid border-primary transform -translate-x-1/2 -translate-y-1/2 left-1/2"></div>
+            <div class="w-32 absolute -top-3 border border-solid border-primary transform -translate-x-1/2 -translate-y-1/2 left-1/2" onclick="showSummary()"></div>
           </div>
           <div class="w-full flex flex-col gap-4">
             <p class="text-base font-medium font-roboto text-textsecondary">Promo Code</p>
-            <div class="w-full flex flex-col gap-3">
-              <input class="w-full text-center flex py-1 rounded-xl border-dashed border-2 border-primary text-base font-medium font-robotoslab placeholder:text-gainsboro text-textsecondary bg-transparent focus:border-solid focus:border-primary focus:outline-none focus:ring-0" type="text" placeholder="Apply A Promo Code">
+            <input class="w-full text-center flex py-1 rounded-xl border-dashed border-2 border-primary text-base font-medium font-robotoslab placeholder:text-gainsboro text-textsecondary bg-transparent focus:border-solid focus:border-primary focus:outline-none focus:ring-0" type="text" placeholder="Apply A Promo Code">
+            <div class="w-full flex flex-col gap-3 overflow-hidden h-0 ease-in-out duration-300" id="summary-total">
               <div class="w-full flex flex-col items-center gap-1">
                 <div class="w-full flex justify-between">
                   <p class="text-base font-medium font-roboto text-textsecondary">Item Cart</p>
@@ -79,4 +79,5 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="../assets/js/script.js"></script>
+<script src="../assets/js/cart.js"></script>
 </html>
