@@ -18,6 +18,7 @@ tailwind.config = {
         redtail: '#AE4242',
         whitesmoke: '#F6F6F6',
         suvagrey: '#868686',
+        gainsboro: '#DED7D7',
         textprimary: '#131516',
         textsecondary: '#EDF6F9',
       },
@@ -37,6 +38,11 @@ tailwind.config = {
       borderRadius: {
         xl4: '30px',
       },
+      dropShadow: {
+        invertmd: ['drop-shadow(0 -4px 3px rgb(0 0 0 / 0.07))', 
+        'drop-shadow(0 -2px 2px rgb(0 0 0 / 0.06))'
+      ]
+      }
     }
   }
 }
